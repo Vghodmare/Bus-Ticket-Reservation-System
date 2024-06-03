@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title> Bus Ticket Reservation System</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <h1><br>Bus Ticket Reservation System </br></h1>
+        <div id="form-container">
+            <form id="reservation-form" action="/predict" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" placeholder="Enter Name Here.." name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" placeholder="Enter Your Email Here.." name="Email" required><br>
+                <label for="from">From:</label><br>
+                <input type="text" id="from" name="from" required><br>
+                <label for="to">To:</label><br>
+                <input type="text" id="to" name="to" required><br>
+                <label for="date">Date:</label><br>
+                <input type="date" id="date" name="to" required><br>
+                <label for="seats">Number of Seats:</label><br>
+                <input type="number" id="seats" name="seats" min="1" max="60" required><br>
+                <br><input type="submit" value="Book Tickets">
+            </form>
+        </div>
+    </body>
+</html>
